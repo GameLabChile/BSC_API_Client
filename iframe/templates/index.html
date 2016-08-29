@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+Player Name: <input type="text" id="name"><br>
+Player id: <input type="text" id="playerid"><br>
+Class id: <input type="text" id="classid"><br>
+Timeout: <input type="text" id="timeout"><br>
+
+<button id="btn">Play!</button>
+<script>
+	$('#btn').click(function(){
+		window.location = "form/"+$('#name').val()+"/"+$('#classid').val()+"/"+$('#playerid').val()+"/"+parseInt($("#timeout").val())+"/"
+		//localhost:8000/form/1234/playername/
+	})
+</script>
+</body>
+</html>
