@@ -45,7 +45,7 @@
 #### how to generate it?
 + 1) create a json with the variables (without sign variable)
 + 2) sort the keys alfabetically
-+ 3) make an rsa signature with SHA-1 encoding of the json ( the json must be generated like [python](https://docs.python.org/2/library/json.html) does, it uses `: ` and `, ` separators)
++ 3) make an rsa signature with SHA-1 encoding of the json ( the json must be generated like [python](https://docs.python.org/2/library/json.html) does, it uses ": " and ", " separators)
   + the private key is provided by Gamelab
   + more documentation about rsa on python: https://stuvel.eu/files/python-rsa-doc/reference.html#rsa.PrivateKey
 + 4) encode the signature in base64 with urlsafe
@@ -57,7 +57,7 @@
 
 ### on success
 + code: 302
-+ header with Location redirect ( example: Location `{{server}}`/api/startgame/`{{game instance hash code}}` )
++ header with Location redirect ( example: `Location {{server}}/api/startgame/{{game instance hash code}}` )
 
 ### on exception
 + code: 400
