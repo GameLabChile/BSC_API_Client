@@ -23,7 +23,7 @@
 + it can't repeat
 
 ---
-### 'classid' : external id for posterior filter on [Get class list](https://github.com/GameLabChile/SodaPop_API_Client/blob/docs/get_class_list.md)
+### 'classid' : external id for posterior filter on [Get class list](https://github.com/GameLabChile/BSC_API_Client/blob/docs/get_class_list.md)
 + must be integer
 + optional parameter
 
@@ -57,7 +57,7 @@
 
 ### on success
 + code: 302
-+ header with Location redirect ( example: Location {{server}}/game/index.html?dp=true&hash={{game instance hash code}} )
++ header with Location redirect ( example: Location {{server}}/api/startgame/{{game instance hash code}} )
 
 ### on exception
 + code: 400
