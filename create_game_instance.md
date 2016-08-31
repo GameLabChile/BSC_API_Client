@@ -25,12 +25,10 @@
 ---
 ### 'classid' : external id for posterior filter on [Get class list](https://github.com/GameLabChile/BSC_API_Client/blob/docs/get_class_list.md)
 + must be integer
-+ optional parameter
 
 ---
 ### 'playerid' : external id to identify players
 + must be integer
-+ optional parameter
 
 ---
 ### 'timeout' : time to live to the game instance
